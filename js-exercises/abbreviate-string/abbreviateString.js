@@ -1,16 +1,18 @@
 import { isString } from "util";
 
 function abbreviateString(str) {
+    var returnString="";
     if(str==null || parseInt(str)>=0 || str.length<=0 || str.includes('[') || str.includes('{'))
     {
-        console.log('invalid parameters')
+        returnString='invalid parameters';
     }
     else{
-        var returnString="";
+        
         var splitStr = str.split(' ');
         returnString=splitStr[0]+" "+splitStr[splitStr.length-1].charAt(0)+".";
-        console.log(returnString);
     }
+    return returnString
 }
+
 
 export { abbreviateString };
