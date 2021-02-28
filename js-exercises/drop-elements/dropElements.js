@@ -1,3 +1,7 @@
-function dropElements(elements, predicate) {}
+function dropElements(elements, predicate) {
+    if(predicate>=3){
+
+    }
+}
 
 export { dropElements };
